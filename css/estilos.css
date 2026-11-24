@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3e5f5;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.caja {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.barra {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.botonMas {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #e1bee7;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px dashed #8e24aa;
+    flex-shrink: 0;
+}
+
+.circulo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #8e24aa;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.visor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.oculto {
+    display: none;
+}
+
+.barras {
+    position: absolute;
+    top: 15px;
+    width: 90%;
+    display: flex;
+}
+
+.barraFondo {
+    flex: 1;
+    height: 4px;
+    background: #555;
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.barraLlena {
+    height: 100%;
+    width: 0;
+    background: white;
+    transition: width 3s linear;
+}
+
+#foto {
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 10px;
+}
+
+#cerrar {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    color: white;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
